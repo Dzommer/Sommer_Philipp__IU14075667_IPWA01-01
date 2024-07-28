@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleiderspenden für Krisenregionen des Kleiderspendevereins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über uns</a></li>
+                <li><a href="#">Spenden registrieren</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrierung der Kleiderspenden</h1>
+        <form id="spendeForm">
+            <label for="spendenArt">Art der Kleidung:</label>
+            <input type="text" id="spendenArt" name="spendenArt" required>
+            
+            <label for="krisengebiet">Krisengebiet:</label>
+            <select id="krisengebiet" name="krisengebiet">
+                <option value="gebiet1">Ukraine</option>
+                <option value="gebiet2">Palästina</option>
+                <option value="gebiet3">Syrien</option>
+                <option value="gebiet4">Libanon</option>
+            </select>
+            
+            <label>Übergabeoption:</label>
+            <input type="radio" id="uebergabe" name="option" value="uebergabe" checked>
+            <label for="uebergabe">Übergabe an der Geschäftsstelle</label>
+            <input type="radio" id="abholung" name="option" value="abholung">
+            <label for="abholung">Abholung</label>
+            
+            <div id="abholDetails" style="display:none;">
+                <label for="adresse">Abholadresse:</label>
+                <input type="text" id="adresse" name="adresse">
+            </div>
+            
+            <button type="submit">Spende registrieren</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kleiderspendenverein. Alle Rechte vorbehalten.</p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
