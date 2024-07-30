@@ -20,32 +20,68 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Registrierung der Kleiderspenden</h1>
+   <main>
+        <section class="welcome-text">
+            <h2>Herzlich Willkommen beim Spendenverein!</h2>
+            <p>Auf dieser Seite können Sie mit der Abgabe einer Spende Menschen in Krisengebieten unterstützen. Dazu füllen Sie einfach das untenstehende Formular aus.</p>
+        </section>
+        <h1>Kleiderspenden registrieren</h1>
         <form id="spendeForm">
-            <label for="spendenArt">Art der Kleidung:</label>
-            <input type="text" id="spendenArt" name="spendenArt" required>
-            
-            <label for="krisengebiet">Krisengebiet:</label>
-            <select id="krisengebiet" name="krisengebiet">
-                <option value="gebiet1">Ukraine</option>
-                <option value="gebiet2">Palästina</option>
-                <option value="gebiet3">Syrien</option>
-                <option value="gebiet4">Libanon</option>
-            </select>
-            
-            <label>Übergabeoption:</label>
-            <input type="radio" id="uebergabe" name="option" value="uebergabe" checked>
-            <label for="uebergabe">Übergabe an der Geschäftsstelle</label>
-            <input type="radio" id="abholung" name="option" value="abholung">
-            <label for="abholung">Abholung</label>
-            
-            <div id="abholDetails" style="display:none;">
+            <div class="form-row">
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede" required>
+                    <option value="herr">Herr</option>
+                    <option value="frau">Frau</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="strasse">Straße:</label>
+                <input type="text" id="strasse" name="strasse" required>
+                <label for="hausnummer">Hausnummer:</label>
+                <input type="text" id="hausnummer" name="hausnummer" required>
+            </div>
+            <div class="form-row">
+                <label for="plz">PLZ:</label>
+                <input type="text" id="plz" name="plz" required>
+                <label for="ort">Ort:</label>
+                <input type="text" id="ort" name="ort" required>
+            </div>
+            <div class="form-row">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="spendenArt">Art der Kleidung:</label>
+                <input type="text" id="spendenArt" name="spendenArt" required>
+            </div>
+            <div class="form-row">
+                <label for="krisengebiet">Krisengebiet:</label>
+                <select id="krisengebiet" name="krisengebiet">
+                    <option value="gebiet1">Krisengebiet 1</option>
+                    <option value="gebiet2">Krisengebiet 2</option>
+                    <option value="gebiet3">Krisengebiet 3</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Übergabeoption:</label>
+                <input type="radio" id="uebergabe" name="option" value="uebergabe" checked>
+                <label for="uebergabe">Übergabe an der Geschäftsstelle</label>
+                <input type="radio" id="abholung" name="option" value="abholung">
+                <label for="abholung">Abholung</label>
+            </div>
+            <div class="form-row" id="abholDetails" style="display:none;">
                 <label for="adresse">Abholadresse:</label>
                 <input type="text" id="adresse" name="adresse">
             </div>
-            
-            <button type="submit">Spende registrieren</button>
+            <div class="form-row">
+                <button type="submit">Spende registrieren</button>
+            </div>
         </form>
     </main>
     <footer>
