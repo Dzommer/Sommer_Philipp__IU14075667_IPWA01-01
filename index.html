@@ -55,9 +55,15 @@
                 <label for="email">E-Mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-row">
-                <label for="spendenArt">Art der Kleidung (Bitte Kleidungsstück und Menge angeben - mit Komma trennen):</label>
-                <input type="text" id="spendenArt" name="spendenArt" required>
+              <div class="form-row">
+                <label>Art der Kleidung:</label>
+                <div id="kleidungTable">
+                    <div class="kleidung-row">
+                        <input type="number" name="menge[]" placeholder="Menge" required>
+                        <input type="text" name="kleidung[]" placeholder="Kleidung" required>
+                    </div>
+                </div>
+                <button type="button" onclick="addKleidungRow()">Weitere Kleidung hinzufügen</button>
             </div>
             <div class="form-row">
                 <label for="krisengebiet">Krisengebiet:</label>
