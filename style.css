@@ -15,6 +15,7 @@ header .logo img {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Zentriert die Navigationslinks */
 }
 
 nav ul li {
@@ -112,6 +113,7 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Unterstreichung bei Hover für Links im Footer */
 }
+
 #abholDetails {
     display: none;
 }
