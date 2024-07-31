@@ -28,7 +28,7 @@ nav ul li {
 }
 
 .welcome-text h2 {
-    font-size: 2em; /* Größere Schriftgröße für die Begrüßungsüberschrift */
+    font-size: 2em;
 }
 
 .form-heading {
@@ -52,25 +52,33 @@ form {
 .form-row label {
     flex: 1 1 100%;
     margin-bottom: 5px;
-    font-weight: bold; /* Fett markieren der Formularüberschriften */
+    font-weight: bold;
 }
 
-.form-row input, .form-row select {
+.form-row input, .form-row select, .form-row textarea, .form-row button {
     flex: 1 1 100%;
     padding: 8px;
     margin-bottom: 5px;
 }
 
-.form-row input[type="text"], .form-row input[type="email"] {
-    flex: 1 1 48%;
-    margin-right: 2%;
+.kleidung-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.form-row input[type="text"]:nth-child(2), .form-row input[type="email"]:nth-child(2) {
-    margin-right: 0;
+button[type="button"] {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
 }
 
-button {
+button[type="button"]:hover {
+    background-color: #e0e0e0;
+}
+
+button[type="submit"] {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -80,7 +88,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background-color: #45a049;
 }
 
