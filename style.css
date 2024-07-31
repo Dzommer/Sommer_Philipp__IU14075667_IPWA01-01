@@ -95,8 +95,23 @@ button[type="submit"]:hover {
 footer {
     text-align: center;
     margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f8f8f8; /* Optional: für einen abgesetzten Hintergrund */
+    border-top: 1px solid #e7e7e7; /* Optional: für eine leichte Abgrenzung nach oben */
 }
 
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #333; /* Standardfarbe für Links im Footer */
+    text-decoration: none; /* Links im Footer ohne Unterstreichung */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover für Links im Footer */
+}
 #abholDetails {
     display: none;
 }
